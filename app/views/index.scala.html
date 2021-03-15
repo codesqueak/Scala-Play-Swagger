@@ -1,0 +1,54 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Play Framework Scala/Swagger REST examples</title>
+    </head>
+
+    <body>
+        <section id="top">
+            <h1>Play Framework Scala/Swagger REST examples</h1>
+
+            <p>This example code was produced as document and to give working examples of how to use Scala / Swagger / Play. It includes: </p>
+            <ul>
+                <li>Use of GET, POST, DELETE, PATH, HEAD and OPTIONS</li>
+                <li>JSON body object parameters</li>
+                <li>API parameters</li>
+                <li>URL embedded parameters</li>
+                <li>Swagger API annotations</li>
+                <li>Swagger model annotations</li>
+                <li>Generation of Swagger JSON</li>
+            </ul>
+
+            <h2>Swagger / Play 2 Support</h2>
+            <p>This is a module to support Swagger annotations within Play Framework controllers.</p>
+            <a href="https://github.com/swagger-api/swagger-play">Swagger Play2 Module</a>
+            <p>Unfortunately the code does not appear to be maintained with the latest release being 2 years old at the time of writing.</p>
+
+            <h2>Swagger / Play 2 Support - Forked and Updated</h2>
+            <p>...however it has been forked and updated.</p>
+            <p>This fork is cross-compiled for Play 2.7 and 2.8 with Scala 2.12 and 2.13.</p>
+            <a href="https://github.com/dwickern/swagger-play">Forked Swagger Play2 Module</a>
+
+            <h2>Swagger Code Generator</h2>
+            <a href="https://github.com/swagger-api/swagger-codegen">swagger codegen</a>
+
+            <h2>Swagger UI</h2>
+            <p> This link opens the swagger UI. Unfortunately it defaults the Petstore Demo (why?). </p>
+            <p>To open this demo change the url from <b>https://petstore.swagger.io/v2/swagger.json</b> to <b>/swagger.json</b></p>
+
+            <a href="http://localhost:9000/docs/swagger-ui/index.html">Open the UI</a>
+
+            <h2>Swagger JSON Generation</h2>
+            <a href="http://localhost:9000/swagger.json">Generated Swagger JSON</a>
+
+        </section>
+    </body>
+
+</html>

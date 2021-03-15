@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+
+
+# An example controller showing a sample home page
+GET            /                             controllers.HomeController.index
+
+# Map static resources from the /public folder to the /assets URL path
+
+GET            /shopping                     controllers.ShoppingListController.getAll(page:Int ?= 0, size:Int ?= 10)
+GET            /shopping/:itemId             controllers.ShoppingListController.getById(itemId: java.util.UUID)
+DELETE         /shopping/:itemId             controllers.ShoppingListController.deleteById(itemId: java.util.UUID)
+DELETE         /shopping                     controllers.ShoppingListController.deleteAll()
+POST           /shopping                     controllers.ShoppingListController.addNewItem()
+# PUT
+PATCH          /shopping/:itemId             controllers.ShoppingListController.patchItem(itemId: java.util.UUID)
+
+# Less used request methods
+HEAD           /shopping                     controllers.ShoppingListController.headAll(page:Int ?= 0, size:Int ?= 10)
+OPTIONS        /shopping                     controllers.ShoppingListController.options()
+# TRACE
+
+# Swagger support
+GET            /swagger.json                 controllers.ApiHelpController.getResources
+GET            /docs/swagger-ui/*file        controllers.Assets.at(path:String="/public/lib/swagger-ui", file:String)
+GET            /assets/*file                 controllers.Assets.versioned(path="/public", file: Asset)
