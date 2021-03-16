@@ -26,10 +26,8 @@ Unfortunately the code does not appear to be maintained with the latest release 
 
 [Forked Swagger Play2 Module](https://github.com/dwickern/swagger-play)
 
-
 ## Swagger Code Generator
-[swagger codegen](https://github.com/swagger-api/swagger-codegen)
-
+[https://github.com/swagger-api/swagger-codegen](https://github.com/swagger-api/swagger-codegen)
 
 ## Swagger UI
 This link opens the swagger UI in a running project. Unfortunately it defaults the Petstore Demo (why?).
